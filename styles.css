@@ -98,7 +98,7 @@ ul { list-style: none; }
   position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(135deg, rgba(13,27,15,0.85) 0%, rgba(27,122,43,0.6) 50%, rgba(13,27,15,0.75) 100%);
 }
-.hero__content { position: relative; z-index: 2; padding: 80px 0; }
+.hero__content { position: relative; z-index: 2; padding-top: 80px; padding-bottom: 80px; }
 .hero__badge {
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(197,160,40,0.15); border: 1px solid rgba(197,160,40,0.3);
