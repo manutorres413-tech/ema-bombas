@@ -81,21 +81,37 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section--dark" style="padding: 80px 0; overflow: hidden;">
     <div class="container">
-      <div class="about__grid fade-in">
-        <div class="about__image">
-          <img src="assets/img/martin-alfieri.png" alt="Martín Alfieri, Director de EMA Bombas" style="height:420px; object-fit:cover; width:100%; border-radius:var(--radius-lg);">
-          <div class="about__image-accent"></div>
+      <div class="fade-in" style="display: grid; grid-template-columns: 320px 1fr; gap: 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.3);">
+        <!-- Foto completa sin recorte -->
+        <div style="position: relative;">
+          <img src="assets/img/martin-alfieri.png" alt="Martín Alfieri, Director de EMA Bombas" style="width: 100%; height: 100%; object-fit: contain; background: #1a1a1a; display: block;">
         </div>
-        <div class="about__content">
-          <span class="section__label"><i class="fas fa-quote-left"></i> Nuestra Palabra</span>
-          <p style="font-size:1.15rem;line-height:1.9;color:var(--ema-gray-dark);font-style:italic;margin-top:16px;">"Acá no fabricamos en serie ni tenemos robots. Cada bomba la armamos a mano, la probamos nosotros y la entregamos con la tranquilidad de saber que va a andar. Si no me la compraría yo, no se la vendo a nadie."</p>
-          <p style="margin-top:24px;font-weight:700;font-size:1.1rem;color:var(--ema-dark)">Martín Alfieri</p>
-          <p style="color:var(--ema-green);font-weight:600;">Director de EMA Bombas</p>
+        <!-- Tarjeta de cita -->
+        <div style="background: linear-gradient(135deg, #1b2a1c 0%, #0d1b0f 100%); padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; position: relative;">
+          <div style="position: absolute; top: 24px; right: 32px; font-size: 5rem; color: rgba(197,160,40,0.12); line-height: 1; font-family: Georgia, serif;">"</div>
+          <span style="display: inline-flex; align-items: center; gap: 8px; background: rgba(197,160,40,0.15); border: 1px solid rgba(197,160,40,0.3); color: var(--ema-gold-light); padding: 6px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; width: fit-content; margin-bottom: 24px;"><i class="fas fa-quote-left"></i> Nuestra Palabra</span>
+          <p style="font-size: 1.15rem; line-height: 1.9; color: rgba(255,255,255,0.85); font-style: italic; margin-bottom: 32px;">"Acá no fabricamos en serie ni tenemos robots. Cada bomba la armamos a mano, la probamos nosotros y la entregamos con la tranquilidad de saber que va a andar. Si no me la compraría yo, no se la vendo a nadie."</p>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+            <p style="font-weight: 700; font-size: 1.1rem; color: white; margin-bottom: 4px;">Martín Alfieri</p>
+            <p style="color: var(--ema-gold-light); font-weight: 600; font-size: 0.9rem;">Director de EMA Bombas</p>
+          </div>
         </div>
       </div>
     </div>
+    <style>
+      @media (max-width: 768px) {
+        .section--dark .container > .fade-in {
+          grid-template-columns: 1fr !important;
+        }
+        .section--dark .container > .fade-in > div:first-child img {
+          max-height: 400px;
+          object-fit: cover !important;
+          object-position: top;
+        }
+      }
+    </style>
   </section>
 
   <section class="section section--green cta-banner">
