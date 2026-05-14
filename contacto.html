@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | EMA Bombas - Presupuestos y Consultas - Gualeguaychú</title>
+  <meta name="description" content="Contactá a EMA Bombas para presupuestos de bombas sumergibles portátiles y alquiler de grupos electrógenos. Gualeguaychú, Entre Ríos. Tel: 3446 62-0703.">
+  <meta name="keywords" content="contacto EMA Bombas, presupuesto bombas sumergibles, comprar bomba agua Gualeguaychú, alquiler grupo electrógeno">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="AR-ER">
+  <meta name="geo.placename" content="Gualeguaychú">
+  <link rel="canonical" href="https://www.bombasema.com.ar/contacto.html">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo"><img src="assets/img/logo.webp" alt="Logo EMA Bombas" width="48" height="48"><span>EMA BOMBAS</span></a>
+      <div class="navbar__links" id="navLinks"><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="la-empresa.html">Nosotros</a><a href="instalacion.html">Instalación</a><a href="politica-de-calidad.html">Calidad</a><a href="contacto.html">Contacto</a></div>
+      <a href="contacto.html" class="navbar__cta">Solicitar Presupuesto</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero" style="min-height:50vh">
+    <div class="hero__bg"><img src="assets/img/bomba-bandera.webp" alt="Equipos EMA Bombas con bandera argentina"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content" style="padding:40px 0">
+      <div class="hero__badge"><i class="fas fa-envelope"></i> Hablemos</div>
+      <h1><span class="highlight">Contactanos</span></h1>
+      <p class="hero__subtitle">Estamos para asesorarte. Escribinos o llamanos y te respondemos a la brevedad.</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO INFO -->
+  <section class="section">
+    <div class="container">
+      <div class="contact__grid fade-in">
+        <div class="contact__info">
+          <div class="contact-item">
+            <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><h4>Ubicación</h4><p>Acceso Sur 3026, Pbro. Luis Jeannot Sueyro</p><p>Gualeguaychú, Entre Ríos, Argentina</p><a href="https://maps.app.goo.gl/MPAzcUcAxipJYEYY7" target="_blank" rel="noopener">Ver en Google Maps →</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon"><i class="fas fa-phone"></i></div>
+            <div><h4>Teléfonos</h4><p><a href="tel:+5493446620703" style="color:var(--ema-green);font-weight:500">+54 9 3446 62-0703</a></p><p><a href="tel:+5493446617827" style="color:var(--ema-green);font-weight:500">+54 9 3446 61-7827</a></p></div>
+          </div>
+          <div class="contact-item" style="gap:16px;margin-top:10px">
+            <a href="https://www.instagram.com/emabombas/" target="_blank" rel="noopener" class="contact-item__icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/BombasEma/" target="_blank" rel="noopener" class="contact-item__icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/5493446620703" target="_blank" rel="noopener" class="contact-item__icon" style="background:rgba(37,211,102,0.1);color:#25D366" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact__map">
+          <iframe src="https://maps.google.com/maps?q=EMA+bombas+Gualeguaych%C3%BA&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" title="Ubicación de EMA Bombas"></iframe>
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="contact__form fade-in" style="margin-top:64px">
+        <div class="section__header" style="margin-bottom:40px">
+          <span class="section__label"><i class="fas fa-paper-plane"></i> Formulario de Consulta</span>
+          <h2 class="section__title">Envianos tu consulta</h2>
+          <p class="section__subtitle">Completá el formulario y nos comunicamos con vos a la brevedad.</p>
+        </div>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <input type="text" name="nombre" placeholder="Tu nombre *" required id="form-nombre">
+          <input type="tel" name="telefono" placeholder="Tu teléfono *" required id="form-telefono">
+          <input type="email" name="email" placeholder="Tu email" class="full-width" id="form-email">
+          <select name="consulta" class="full-width" id="form-consulta">
+            <option value="">Tipo de consulta</option>
+            <option value="presupuesto-bomba">Presupuesto bomba sumergible</option>
+            <option value="alquiler-generador">Alquiler grupo electrógeno</option>
+            <option value="repuestos">Repuestos y accesorios</option>
+            <option value="soporte">Soporte técnico</option>
+            <option value="otro">Otra consulta</option>
+          </select>
+          <textarea name="mensaje" placeholder="Tu mensaje..." class="full-width" id="form-mensaje"></textarea>
+          <button type="submit" class="btn-primary full-width"><i class="fas fa-paper-plane"></i> Enviar Consulta por WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--green cta-banner">
+    <div class="container">
+      <h2>¿Preferís escribirnos directamente?</h2>
+      <p>Contactanos por WhatsApp y te respondemos al instante.</p>
+      <a href="https://wa.me/5493446620703" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Abrir WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="index.html" class="navbar__logo"><img src="assets/img/logo.webp" alt="EMA Bombas" width="48" height="48" style="border-radius:50%"><span style="color:var(--ema-gold-light)">EMA BOMBAS</span></a><p>Fabricación de bombas sumergibles portátiles de alto caudal y alquiler de grupos electrógenos. Gualeguaychú, Entre Ríos.</p><div class="footer__social"><a href="https://www.instagram.com/emabombas/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/BombasEma/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></div></div>
+        <div><h4 class="footer__title">Navegación</h4><div class="footer__links"><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="la-empresa.html">Nosotros</a><a href="instalacion.html">Instalación</a><a href="politica-de-calidad.html">Calidad</a><a href="contacto.html">Contacto</a></div></div>
+        <div><h4 class="footer__title">Servicios</h4><div class="footer__links"><a href="productos.html#alto-caudal">Bombas Alto Caudal</a><a href="productos.html#caudal-medio">Bombas Caudal Medio</a><a href="productos.html#accesorios">Motores y Repuestos</a><a href="productos.html#generadores">Grupos Electrógenos</a></div></div>
+        <div><h4 class="footer__title">Contacto</h4><div class="footer__links"><a href="https://maps.app.goo.gl/MPAzcUcAxipJYEYY7" target="_blank"><i class="fas fa-map-marker-alt"></i> Acceso Sur 3026, Gualeguaychú</a><a href="tel:+5493446620703"><i class="fas fa-phone"></i> 3446 62-0703</a><a href="tel:+5493446617827"><i class="fas fa-phone"></i> 3446 61-7827</a></div></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2026 EMA Bombas — Gualeguaychú, Entre Ríos, Argentina. <a href="https://www.bombasema.com.ar" style="color:var(--ema-gold-light)">www.bombasema.com.ar</a> | Desarrollo: <a href="https://www.linkedin.com/in/manueltorres02" target="_blank" style="color:var(--ema-gold-light)">MT</a></p></div>
+    </div>
+  </footer>
+  <a href="https://wa.me/5493446620703" target="_blank" class="whatsapp-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <script>
+    window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50)});
+    document.getElementById('navToggle').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('active')});
+    document.querySelectorAll('.navbar__links a').forEach(a=>{a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('active'))});
+    const observer=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.1});
+    document.querySelectorAll('.fade-in,.fade-in-left,.fade-in-right').forEach(el=>observer.observe(el));
+    function handleSubmit(e){e.preventDefault();const f=e.target;const msg=`Hola EMA Bombas! Soy ${f.nombre.value}. ${f.consulta.value?'Consulta: '+f.consulta.value+'. ':''}${f.mensaje.value||''}. Mi tel: ${f.telefono.value}`;window.open(`https://wa.me/5493446620703?text=${encodeURIComponent(msg)}`,'_blank')}
+  </script>
+</body>
+</html>

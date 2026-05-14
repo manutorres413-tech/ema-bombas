@@ -1,0 +1,13 @@
+# Archivos pesados y en bruto
+*.zip
+Fotos_EMA/
+Bomba_galpon.png
+Modelo_D14_3200.png
+LOGO.jfif
+Informe Empresa EMA BOMBAS Gualeguaychú.pdf
+
+# Carpetas de despliegue anteriores
+deploy/
+.surgeignore
+
+.vercel
